@@ -14,5 +14,5 @@ Rails.application.routes.draw do
 end
 
 Rails.application.routes.draw do
-  get "/products", to: "products#index"
+  resources :products
 end
