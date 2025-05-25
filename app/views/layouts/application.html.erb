@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html>
-
-<body>
+  <body>
+    <div class="notice"><%= notice %></div>
     <nav>
-        <%= link_to "Home", root_path %>
-        <%= button_to "Log out", session_path, method: :delete if authenticated? %>
-        <%= link_to "Login", new_session_path unless authenticated? %>
+      <%= link_to "Home", root_path %>
+      <%= button_to "Log out", session_path, method: :delete if authenticated? %>
+      <%= link_to "Login", new_session_path unless authenticated? %>
     </nav>
-
     <main>
-        <%= yield %>
+      <%= yield %>
     </main>
-</body>
-
+  </body>
 </html>
