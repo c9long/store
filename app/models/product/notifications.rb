@@ -1,4 +1,5 @@
-module Product
+# app/models/product/notifications.rb
+class Product < ApplicationRecord
   module Notifications
     extend ActiveSupport::Concern
 
