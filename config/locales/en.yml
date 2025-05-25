@@ -32,3 +32,6 @@ en:
   products:
     index:
       title: "Products"
+  product_mailer:
+    in_stock:
+      subject: "Your subscribed product is back in stock"
